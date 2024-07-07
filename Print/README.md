@@ -1,94 +1,115 @@
-<h1>Python Print Function</h1>
-<p>The <code>print</code> function in Python is used to display output to the
-    console. It can take various parameters to customize the output.</p>
+<h1>print</h1>
+<p>print is a built-in function in python which is used to display the output data on console.</p>
+<p>It is one of the most frequently used functions and is essential for displaying information, debugging code, and interacting with users.</p>
+<p><strong>Syntax</strong></p>
+<p>The basic syntax of the print function is:</p>
 
-<h2>Syntax</h2>
-<p>The basic syntax of the <code>print</code> function is:</p>
-<pre><code>print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)</code></pre>
+```python
+print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+```
 
-<h2>Parameters</h2>
 <ul>
-    <li><code>*objects</code>: Any number of objects to be printed. They are
-        converted to strings and separated by <code>sep</code>.</li>
-    <li><code>sep</code>: A string inserted between the objects. Default is a
-        space (' ').</li>
-    <li><code>end</code>: A string appended after the last object. Default is a
-        newline ('\n').</li>
-    <li><code>file</code>: A file-like object (stream) to which the output is
-        printed. Default is <code>sys.stdout</code>.</li>
-    <li><code>flush</code>: A boolean specifying whether to forcibly flush the
-        stream. Default is <code>False</code>.</li>
+	<li><strong>*objects : </strong> Any number of objects (strings, numbers, variables, etc.) to be printed.</li>
+	<li><strong>sep : </strong> A string inserted between objects. The default is a space (' ')</li>
+	<li><strong>end : </strong> A string appended after the last object. The default is a newline ('\n')</li>
+	<li><strong>file : </strong> An object with a write method, defaulting to sys.stdout (usually the console)</li>
+	<li><strong>flush : </strong> A boolean specifying whether to forcibly flush the stream (immediatly adding data to file). The default is False</li>
 </ul>
 
-<h2>Examples</h2>
+<h3>sep</h3>
+<p>The sep parameter specifies the separator between multiple objects. By default, it is a space (' ').</p>
 
-<h3>Basic Example</h3>
-<pre><code>print("Hello, World!")</code></pre>
-<p>Output:</p>
-<pre><code>Hello, World!</code></pre>
+```python
+print("apple", "banana", "cherry", sep=", ")
 
-<h3><code>sep</code> Parameter</h3>
-<p>The <code>sep</code> parameter specifies the separator between multiple
-    objects:</p>
-<pre><code>print("Hello", "World", sep="-")</code></pre>
-<p>Output:</p>
-<pre><code>Hello-World</code></pre>
+#output : apple, banana, cherry
 
-<h4>More Examples with <code>sep</code></h4>
-<pre><code>print("apple", "banana", "cherry", sep=", ")
-print("2021", "09", "30", sep="/")
-print("Name:", "Alice", "Age:", "30", sep=" | ")</code></pre>
-<p>Outputs:</p>
-<pre><code>apple, banana, cherry
-2021/09/30
-Name: | Alice | Age: | 30</code></pre>
+print("apple", "banana", "cherry", sep="-")
 
-<h3><code>end</code> Parameter</h3>
-<p>The <code>end</code> parameter specifies what to print at the end. By
-    default, it is a newline:</p>
-<pre><code>print("Hello", end=" ")
-print("World")</code></pre>
-<p>Output:</p>
-<pre><code>Hello World</code></pre>
+#output : apple-banana-cherry
 
-<h4>More Examples with <code>end</code></h4>
-<pre><code>print("Loading", end="...")
-print("Done!")
+print(1, 2, 3, sep="")
 
-for i in range(3):
-print(i, end=" ")</code></pre>
+#output : 123
 
-<p>Outputs:</p>
-<pre><code>Loading...Done!
-0 1 2 </code></pre>
+print(2,"banana",3,"cherry",sep=":")
 
-<h3><code>file</code> Parameter</h3>
-<p>The <code>file</code> parameter specifies the file-like object to which the
-    output is printed:</p>
-<pre><code>with open('output.txt', 'w') as f:
-print("Hello, World!", file=f)</code></pre>
-<p>This writes "Hello, World!" to the file <code>output.txt</code>.</p>
+#output : 2:banana:3:cherry
 
-<h4>More Examples with <code>file</code></h4>
-<pre><code>import sys
-print("Error message", file=sys.stderr)
+print(2,"banana",3,"cherry",sep=1)
 
-with open('log.txt', 'a') as f:
-print("Logging information", file=f)</code></pre>
+#output : sep must be None or a string, not int
+```
 
-<p>This writes "Logging information" to the file <code>log.txt</code> in append
-    mode and "Error message" to the standard error stream.</p>
+<h3>end</h3>
+<p>The end parameter specifies what to print at the end of the output. By default, it is a newline ('\n').</p>
 
-<h3><code>flush</code> Parameter</h3>
-<p>The <code>flush</code> parameter forces the output stream to be flushed:</p>
-<pre><code>print("Hello, World!", flush=True)</code></pre>
-<p>This ensures that the output is immediately flushed, useful for real-time
-    applications.</p>
+```python
+print("Hello", end=" ")
+print("World")
 
-<h4>More Examples with <code>flush</code></h4>
-<pre><code>import time
-for i in range(3):
-print(i, flush=True)
-time.sleep(1)</code></pre>
-<p>This prints the numbers 0, 1, and 2 with a 1-second delay between each,
-    ensuring each number is immediately printed.</p>
+#output: Hello World
+
+print("Hello")
+print("World")
+
+#output : Hello 
+#         World
+
+print(1,end="")
+print(2)
+
+#output : HelloWorld
+
+print(1,2,3,end=2)
+
+#output : TypeError: end must be None or a string, not int         
+```
+
+<h3>file</h3>
+<p>The file parameter allows you to redirect the output from the console to a file or any object that has a write method. This parameter gives you flexibility in where your output is directed, beyond just printing to the console.</p>
+<p><strong>file : </strong>specifies the output destination. By default, it is sys.stdout, which represents the console (standard output).</p>
+<p><strong>Examples</strong></p>
+<h6>Printing to a File</h6>
+<p>To print output directly to a file, you open the file in write mode ("w"), and pass the file object as the file parameter to print.</p>
+
+```python
+# Open a file in write mode
+with open("output.txt", "w") as file:
+    print("Hello, World!", file=file)
+```
+
+<ul>
+	<li>open("output.txt", "w") opens the file output.txt in write mode ("w").</li>
+	<li>'with' statement ensures the file is properly closed after use.</li>
+	<li>print("Hello, World!", file=file) prints "Hello, World!" to output.txt.</li>
+</ul>
+
+<h6>Appending to a File</h6>
+<p>You can also append to a file by opening it in append mode ("a"):</p>
+
+```python
+# Append to an existing file
+with open("output.txt", "a") as file:
+    print("This is an appended line.", file=file)
+```
+
+<ul>
+	<li>open("output.txt", "a") opens output.txt in append mode ("a").</li>
+	<li>print("This is an appended line.", file=file) appends the line to output.txt.</li>
+</ul>
+
+<h6>Using sys.stderr for Error Messages</h6>
+<p>You can redirect errors or other messages to sys.stderr, which is typically used for error output:</p>
+
+```python
+import sys
+
+try:
+    result = 10 / 0  # Raises a ZeroDivisionError
+except ZeroDivisionError as e:
+    print(f"Error occurred: {e}", file=sys.stderr)
+
+```
+
+<p>print(f"Error occurred: {e}", file=sys.stderr) prints the error message to sys.stderr, which is the standard error stream.</p>
