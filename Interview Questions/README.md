@@ -1,3 +1,5 @@
+## Basics Of Programming
+
 ### What is a Program?
 A **program** is a collection of instructions that a computer can execute to solve a specific problem.  
 
@@ -20,10 +22,10 @@ There are three types of programming languages:
    **Examples:** Python, Java, JavaScript
 
 ### What is compiler?
-A **compiler** is a software that translates the high level language to low level language.
+A **compiler** is a software that translates the high level language into low level language. It transaltes the entire code once and then executes. 
 
 ### What is interpreter?
-A **interpreter** is a software that translates the high level language to low level language.
+A **interpreter** is a software that translates the high level language into low level language. It transalates code line by line and executes code line by line. 
 
 ### what is the difference between compiler and interpreter? 
 | Feature | Compiler | Interpreter |  
