@@ -1,13 +1,13 @@
-**What is a Program?**  
+### What is a Program?
 A **program** is a collection of instructions that a computer can execute to solve a specific problem.  
 
-**What is Programming?**  
+### What is Programming?
 **Programming** is the process of writing, testing, and maintaining a program to solve a specific problem.  
 
-**What is a Programming Language?**  
+### What is a Programming Language?
 A **programming language** is a formal language used to communicate with computers.  
 
-**Types of Programming Languages**  
+### Types of Programming Languages
 There are three types of programming languages:  
 
 1. **Low-Level Languages** 🏩 – These languages are machine-friendly and can directly interact with hardware.  
