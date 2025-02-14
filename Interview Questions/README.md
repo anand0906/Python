@@ -110,7 +110,7 @@ Python has several built-in **data types**:
 
 ---
 
-### Example Code with Different Data Types:
+**Example Code with Different Data Types:**
 
 ```python
 # Numeric Types
