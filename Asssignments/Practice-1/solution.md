@@ -153,11 +153,3 @@ print("Cube:",n**3)
 
 
 ---
-
-<details>
-<summary></summary>
-  
-```python
-
-```
-</details>
