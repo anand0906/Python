@@ -1,7 +1,3 @@
-**Basic Python Problems**
-
----
-
 **1. Print User Input**
 
 **Problem Statement**  
