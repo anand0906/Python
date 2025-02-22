@@ -1,3 +1,4 @@
+
 **1. Print User Input**
 
 **Problem Statement**  
@@ -78,89 +79,27 @@ Hel
 
 ---
 
-**5. Convert String to Upper and Lower Case**
+**5. Extract Last Three Characters of a String**
 
 **Problem Statement**  
-Write a program that takes a string as input and prints it in both uppercase and lowercase.
+Write a program that takes a string as input and prints the last three characters.
 
 **Input Format**  
 - A string.
 
 **Output Format**  
-- The string in uppercase and lowercase.
+- Last three characters of the string.
 
 **Example**  
 **Input:**  
-Python  
+Programming  
 
 **Output:**  
-PYTHON  
-python
+ing
 
 ---
 
-**6. Concatenate Two Strings**
-
-**Problem Statement**  
-Write a program that takes two strings as input and concatenates them.
-
-**Input Format**  
-- Two strings.
-
-**Output Format**  
-- The concatenated result of the two strings.
-
-**Example**  
-**Input:**  
-Hello  
-World  
-
-**Output:**  
-HelloWorld
-
----
-
-**7. Replace a Character in a String**
-
-**Problem Statement**  
-Write a program that takes a string and replaces all occurrences of the letter 'a' with '*'.
-
-**Input Format**  
-- A string.
-
-**Output Format**  
-- The modified string with 'a' replaced by '*'.
-
-**Example**  
-**Input:**  
-apple  
-
-**Output:**  
-*pple
-
----
-
-**8. Check Length of a String**
-
-**Problem Statement**  
-Write a program that takes a string as input and prints its length.
-
-**Input Format**  
-- A string.
-
-**Output Format**  
-- The length of the string.
-
-**Example**  
-**Input:**  
-Python  
-
-**Output:**  
-6
-
----
-
-**9. Extract a Substring**
+**6. Extract a Substring from Index 2 to 5**
 
 **Problem Statement**  
 Write a program that takes a string and extracts a substring from index 2 to 5.
@@ -180,47 +119,7 @@ ogra
 
 ---
 
-**10. Check Type of a Variable**
-
-**Problem Statement**  
-Write a program that takes a variable and prints its type.
-
-**Input Format**  
-- A variable (integer, float, string, etc.).
-
-**Output Format**  
-- The type of the variable.
-
-**Example**  
-**Input:**  
-42  
-
-**Output:**  
-<class 'int'>
-
----
-
-**11. Convert Boolean to String**
-
-**Problem Statement**  
-Write a program that takes a boolean value as input and converts it into a string.
-
-**Input Format**  
-- A boolean value (True or False).
-
-**Output Format**  
-- The boolean value as a string.
-
-**Example**  
-**Input:**  
-True  
-
-**Output:**  
-'True'
-
----
-
-**12. Extract Every Second Character from a String**
+**7. Extract Every Second Character from a String**
 
 **Problem Statement**  
 Write a program that takes a string and extracts every second character from it.
@@ -240,7 +139,67 @@ bdf
 
 ---
 
-**13. Convert Float to Integer**
+**8. Reverse a String Using Slicing**
+
+**Problem Statement**  
+Write a program that takes a string as input and prints it in reverse order using slicing.
+
+**Input Format**  
+- A string.
+
+**Output Format**  
+- The reversed string.
+
+**Example**  
+**Input:**  
+Python  
+
+**Output:**  
+nohtyP
+
+---
+
+**9. Extract First Half of a String**
+
+**Problem Statement**  
+Write a program that takes a string as input and extracts its first half.
+
+**Input Format**  
+- A string.
+
+**Output Format**  
+- The first half of the string.
+
+**Example**  
+**Input:**  
+Pythonista  
+
+**Output:**  
+Python
+
+---
+
+**10. Extract Last Half of a String**
+
+**Problem Statement**  
+Write a program that takes a string as input and extracts its last half.
+
+**Input Format**  
+- A string.
+
+**Output Format**  
+- The last half of the string.
+
+**Example**  
+**Input:**  
+Pythonista  
+
+**Output:**  
+nista
+
+---
+
+**11. Convert Float to Integer**
 
 **Problem Statement**  
 Write a program that takes a float as input and converts it into an integer.
@@ -260,27 +219,7 @@ Write a program that takes a float as input and converts it into an integer.
 
 ---
 
-**14. Reverse a String**
-
-**Problem Statement**  
-Write a program that takes a string as input and prints it in reverse order.
-
-**Input Format**  
-- A string.
-
-**Output Format**  
-- The reversed string.
-
-**Example**  
-**Input:**  
-Python  
-
-**Output:**  
-nohtyP
-
----
-
-**15. Find Index of a Character in a String**
+**12. Find Index of a Character in a String**
 
 **Problem Statement**  
 Write a program that takes a string and a character as input and prints the index of the first occurrence of that character.
@@ -299,5 +238,4 @@ P
 
 **Output:**  
 0
-
 
