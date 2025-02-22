@@ -252,3 +252,154 @@ print(f"Sum of {a} and {b} is {s}")
 Sum of 3 and 5 is 8
 ```
 
+# String Formatting in Python
+
+String formatting is the process of inserting custom values or variables into a string. Python provides multiple ways to format strings efficiently. The two most commonly used methods are **`format()`** and **f-strings**.
+
+---
+
+## 1. Using `format()` Method
+The `format()` method allows us to dynamically insert values into a string. This method replaces `{}` placeholders with the specified values in `format()`.
+
+### Syntax:
+```python
+string.format(value1, value2, ...)
+```
+
+### Example 1: Basic Usage
+```python
+name = "Anand"
+print("My name is {}".format(name))
+```
+**Output:**
+```
+My name is Anand
+```
+
+### Example 2: Formatting Multiple Values
+```python
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+sum = a + b
+print("Sum of {} and {} is {}".format(a, b, sum))
+```
+#### Input:
+```
+2
+3
+```
+#### Output:
+```
+Sum of 2 and 3 is 5
+```
+
+### Example 3: Using Positional Indexing
+Python allows us to use indices inside `{}` to rearrange the values.
+```python
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+sum = a + b
+print("Sum of {2} and {1} is {0}".format(sum, b, a))
+```
+#### Input:
+```
+2
+3
+```
+#### Output:
+```
+Sum of 2 and 3 is 5
+```
+
+### Example 4: Using Named Placeholders
+We can also use named placeholders inside `{}` and pass values as keyword arguments.
+```python
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+sum = a + b
+print("Sum of {n1} and {n2} is {s}".format(s=sum, n1=b, n2=a))
+```
+#### Input:
+```
+2
+3
+```
+#### Output:
+```
+Sum of 2 and 3 is 5
+```
+
+---
+
+## 2. Using f-strings (Formatted String Literals)
+Introduced in Python 3.6, **f-strings** provide a more readable and concise way to format strings. Instead of using `format()`, variables are directly inserted inside `{}` within an `f`-prefixed string.
+
+### Syntax:
+```python
+f"string with {variable}"
+```
+
+### Example 1: Basic f-string Formatting
+```python
+a = 3
+b = 5
+s = a + b
+print(f"Sum of {a} and {b} is {s}")
+```
+**Output:**
+```
+Sum of 3 and 5 is 8
+```
+
+### Example 2: Expressions Inside f-strings
+We can include expressions inside `{}`.
+```python
+x = 10
+y = 20
+print(f"The product of {x} and {y} is {x * y}")
+```
+**Output:**
+```
+The product of 10 and 20 is 200
+```
+
+### Example 3: Formatting Numbers
+f-strings support number formatting like specifying decimal places.
+```python
+pi = 3.14159
+print(f"Value of Pi up to 2 decimal places: {pi:.2f}")
+```
+**Output:**
+```
+Value of Pi up to 2 decimal places: 3.14
+```
+
+### Example 4: Aligning Text with f-strings
+We can align text using f-strings for better readability.
+```python
+name = "Python"
+print(f"|{name:^10}|")  # Center align
+print(f"|{name:<10}|")  # Left align
+print(f"|{name:>10}|")  # Right align
+```
+**Output:**
+```
+|  Python  |
+|Python    |
+|    Python|
+```
+
+---
+
+## Summary
+| Method | Description |
+|--------|-------------|
+| `format()` | Uses `{}` placeholders to insert values dynamically. Supports positional and named arguments. |
+| f-strings | More readable and efficient way to insert values inside a string. Allows expressions directly within `{}`. |
+
+Both methods are useful in different scenarios, but **f-strings** are recommended for better readability and performance.
+
+Now you have a solid understanding of string formatting in Python! 🚀
+
+
+
