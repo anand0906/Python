@@ -166,4 +166,144 @@ a = ["ana","bcd"]
 a.clear()
 print(a)  # Output: []
 ```
+---
+## **Other Methods in List**
+
+### **count()**
+🔹 Returns the number of times a given value appears in the list.
+🔹 **Return type:** `int`
+
+**Example:**
+```python
+a = [1,3,4,5,3]
+c = a.count(3)
+print(c)  # Output: 2
+```
+```python
+a = ["ab",3,4,"ab","ab"]
+c = a.count("ab")
+print(c)  # Output: 3
+```
+
+---
+
+### **index()**
+🔹 Finds the position (index) of a given value in the list.
+🔹 **Return type:** `int`
+
+**Example:**
+```python
+a = [1,2,3,4]
+i = a.index(2)
+print(i)  # Output: 1
+```
+```python
+a = [1,"a","c",2]
+ind = a.index(4)  # ValueError if element not found
+print(ind)
+```
+
+#### **Special Case: index(value, start, end)**
+```python
+a = [1,3,4,4,5,4,4]
+ind = a.index(4,4,6)
+print(ind)  # Output: 5
+```
+```python
+a = [1,2,3,3,3,3,3,5]
+ind = a.index(3,-4,-1)
+print(ind)  # Output: 4
+```
+
+---
+
+### **reverse()**
+🔹 Reverses the given list.
+🔹 **Return type:** `None`
+
+**Example:**
+```python
+a = [1,2,3,4]
+a.reverse()
+print(a)  # Output: [4,3,2,1]
+```
+```python
+a = ["a","b","c"]
+a.reverse()
+print(a)  # Output: ["c","b","a"]
+```
+
+---
+
+### **sort()**
+🔹 Sorts the list in ascending or descending order.
+🔹 **Note:** Every element in the list must be of the same type (comparable).
+
+#### **Ascending Order (Default)**
+```python
+a = [3,2,10]
+a.sort()
+print(a)  # Output: [2,3,10]
+```
+```python
+a = ["x","b","d"]
+a.sort()
+print(a)  # Output: ["b","d","x"]
+```
+```python
+a = [[1],[4],[0]]
+a.sort()
+print(a)  # Output: [[0],[1],[4]]
+```
+
+#### **Descending Order**
+```python
+a = [3,2,10]
+a.sort(reverse=True)
+print(a)  # Output: [10,3,2]
+```
+```python
+a = ["x","b","d"]
+a.sort(reverse=True)
+print(a)  # Output: ["x","d","b"]
+```
+
+---
+
+## **Special Methods in List**
+
+| Method  | Description |
+|---------|-------------|
+| `len()` | Returns the length of the list |
+| `max()` | Returns the maximum element of the list |
+| `min()` | Returns the minimum element of the list |
+| `sorted()` | Returns a sorted copy of the list |
+
+**Example:**
+```python
+a = [1,2,3]
+length = len(a)
+print(length)  # Output: 3
+```
+```python
+a = [2,3,4]
+s = max(a)
+print(s)  # Output: 4
+```
+```python
+a = [1,2,4]
+s = min(a)
+print(s)  # Output: 1
+```
+
+#### **Using `sorted()`**
+```python
+a = [2,1,3]
+temp = sorted(a)
+temp_r = sorted(a, reverse=True)
+print(temp)   # Output: [1,2,3]
+print(temp_r) # Output: [3,2,1]
+```
+
+
 
