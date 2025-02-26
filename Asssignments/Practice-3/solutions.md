@@ -134,6 +134,6 @@ print("Student: {} | Score: {:.2f}%".format(name,percentage))
 ```python
 name=input()
 price=float(input())
-print("Product: {} | Score: {:.2f}".format(name,price))
+print("Product: {} | Price: ₹{:.2f}".format(name,price))
 ```
 </details>
