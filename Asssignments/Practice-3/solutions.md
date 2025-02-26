@@ -122,7 +122,7 @@ print("Hello, {}! Welcome to our platform.".format(name))
 ```python
 name=input()
 percentage=float(input())
-print("Student: {} | Score: {:.2f}".format(name,percentage))
+print("Student: {} | Score: {:.2f}%".format(name,percentage))
 ```
 </details>
 
