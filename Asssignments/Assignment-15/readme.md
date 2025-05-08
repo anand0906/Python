@@ -1,4 +1,4 @@
-## 🧱 1. Easy Patterns
+## 🧱 1. Easy Pattern
 
 ---
 
