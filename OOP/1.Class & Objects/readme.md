@@ -1,4 +1,4 @@
-# Complete Guide to Object-Oriented Programming in Python
+
 
 ## Table of Contents
 1. [What is Programming?](#what-is-programming)
